@@ -1,0 +1,16 @@
+$font_size:.8rem;
+$color_wt:#ffffff;
+$color_bk:#000;
+$primary_color:#00a0e3;
+$secondary_color:#02d415;
+$background_clr_gray:#f8f9fa;
+$font-weight:(
+    'normal':400,
+    'bold':700
+);
+$footer_font:13px;
+@mixin footer_design {
+    font-size:$footer_font;
+    color:$color_wt;
+
+}

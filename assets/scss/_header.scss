@@ -1,0 +1,289 @@
+@import "variables";
+
+$position_fx:fixed;
+$position_rl:relative;
+$color_bl:#00a0e3;
+$color_wt:#fff;
+$color_bk:#000;
+@mixin colorwt {
+    color: $color_bk;
+} 
+nav{
+    a{ @include colorwt; }
+}
+@mixin font_gradient{
+    background: linear-gradient(to right, #02d415 38%, #00a0e3 68%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+
+.font_gradient{
+    @include font_gradient;
+}
+
+    .shrink {
+        padding-top: 0;
+        padding-bottom: 0;
+        background-color: #f9f9f9;
+     }     
+    .header--navbar{
+        position: $position_fx;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding-top: 20px;
+        -webkit-transition: .25s;
+        transition: .25s;
+        z-index: 1;
+        .navbar-brand{
+            height: auto;
+	        padding: 0;
+        }
+        li{
+            padding: 0 15px;
+            
+            a{
+                position: relative;
+                padding: 15px 0;
+                &:hover:before, #{&}.active:before  {
+                    width: 90%;
+                }
+                
+                &:before{
+                    content: "";
+                    position: absolute;
+                    left: 5px;
+                    bottom: 26px;
+                    transition: width .25s ease-in-out;
+                    -webkit-transition:width .25s ease-in-out;
+                    height: 1px;
+                    background: $color_bl;
+                    width: 0;
+                }
+            }
+            
+        }
+    }
+.carousel-indicators {
+    & .active{
+        
+        background-color:$primary_color !important;
+    }   
+}
+
+.full-screen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+.carousel-caption{
+    top:14rem;
+    margin: 0 auto;
+} 
+
+// about us
+.about-content{
+    h2{
+        background: linear-gradient(to left, #00a0e3 65%, #02d415  100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    }
+    a{
+        background: linear-gradient(to left, #00a0e3 30%, #02d415  100%);
+    }
+}
+
+.how-it-works{
+    background:#000;
+    .how-images{
+        width: 100%;
+        position: relative;
+        text-align: center;
+        .video_bg_images{
+            width: 100%;
+        }
+    }
+    .how-icon{
+        img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+// testimonials
+.test-wrapper {
+    border: 1px solid #e6e7e8;
+    transition: .4s;
+    p{
+        font-size: 16px;
+    }
+    &:hover{
+        transform: translateY(-10px);
+        box-shadow: 0 10px 60px 0 rgba(71,74,182,.16);
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        width: 0;height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #eaeaea;    
+    }
+}
+.logo{
+	display: inline-block;
+}
+.navbar-brand{
+	height: auto;
+	padding: 0;
+}
+.logo--img {
+    img{
+        width: 50px;
+    }
+}
+.logo--img, .img--content{
+	display: table-cell;
+	vertical-align: middle;
+}
+.logo--content, .img--img{
+	display: table-cell;
+	vertical-align: middle;
+}
+.logo--content{
+    h1{
+        font-size: 18px;
+    }
+    p{
+        font-size: 15px;
+    }
+} 
+/* blog */
+.blog-item
+{
+    background-color: #f8f9fc;
+    transition: .4s;
+    margin-top: 30px;
+    &:hover{
+        transform: translateY(-10px);
+        box-shadow: 0 10px 60px 0 rgba(71,74,182,.16);
+    }
+    .blog-content {
+        padding: 50px 30px 45px;
+         h2{
+            font-weight: 600;
+            margin-bottom: 15px;
+            a {
+                color: #151515;
+                font-size: 1.1rem;
+            }
+        }
+        .blog-meta {
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            margin-top: 20px;
+            a {
+                color: #151515;
+                font-weight: 400;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+/* end blog */
+
+// footer 
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none;
+  li
+  {
+    display:inline-block;
+    margin-bottom:4px;
+  }
+  a{
+    margin-right:2px;
+  }
+}
+.connect {
+    p{
+        margin-bottom:10px;
+        a{
+            &:hover{
+                text-decoration: none;
+                color:$secondary_color;
+            }
+        }
+    }
+}
+
+// team section
+
+.team-section{
+    background-color: $background_clr_gray;
+    .our-team{
+        padding: 20px 15px 30px;
+        background: #fff;
+        border-radius: 15px;
+        text-align: center;
+        transition: .4s;
+        margin:5px;
+        .title{
+            display: block;
+            font-size: 20px;
+            font-weight: 600;
+            color: #2e282a;
+            text-transform: uppercase;
+            margin: 0 0 7px 0;
+        }
+        .post{
+            display: block;
+            font-size: 15px;
+            color: #17bebb;
+            text-transform: capitalize;
+            margin-bottom: 15px;
+        }
+        &:hover .pic{
+                //background: $primary_color;
+                border-radius: 50%;
+                background: linear-gradient(to right, #02d415 38%, #00a0e3 68%);
+                -webkit-text-fill-color: transparent;
+            }
+        &:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 10px 60px 0 rgba(71,74,182,.16);
+        }
+        .pic{
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            padding: 10px;
+            margin-bottom: 25px;
+            transition: all 0.4s ease 0s;
+            img{
+                width: 100%;
+                height: auto;
+                border-radius: 50%;
+            }
+            
+        }
+        
+    }
+}
+
+
+  
+
+
+
+
