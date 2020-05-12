@@ -1,14 +1,30 @@
 @import "assets/scss/colors";
 @import "assets/scss/header";
 @import "assets/scss/variables";
-// @font-face {
-//     font-family: 'normal font';
-//     src: url('fonts/ConfigCondensed-Regular.otf');
-// }
-// @include font-face('config', fonts/ConfigCondensed-Regular);
-
-body{
-    font-family: 'normal font';
+@mixin font-face($font-family, $file-path, $font-weight, $font-style) {
+    @font-face {
+      font-family: $font-family;
+        src: url('#{$file-path}.eot');
+        src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+             url('#{$file-path}.woff') format('woff'),
+             url('#{$file-path}.ttf') format('truetype'),
+             url('#{$file-path}.svg##{$font-family}') format('svg');
+      font-weight: $font-weight;
+      font-style: $font-style;
+    }
+    // Chrome for Windows rendering fix: http://www.adtrak.co.uk/blog/font-face-chrome-rendering/
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+      @font-face {
+        font-family: $font-family;
+          src: url('#{$file-path}.svg##{$font-family}') format('svg');
+      }
+    }
+  }
+  @include font-face('config', 'ConfigCondensed-Regular', 'fonts/ConfigCondensed-Regular', 'serif');
+  @include font-face('bradley', 'Bradley Hand ITC V2', 'fonts/bradley/Bradley Hand ITC V2', 'serif');
+  body{
+   
+    font-family: config;
     margin:0;
     padding: 0;
     font-size: $font_size !important;
@@ -37,6 +53,10 @@ footer{
     font-weight: map-get($font-weight, normal );
     a{
         color:$color_wt;
+    }
+    .bradley{
+        font-family: bradley;
+        font-style: italic;
     }
 }
 
