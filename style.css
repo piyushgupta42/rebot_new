@@ -296,8 +296,38 @@ nav a {
   border-radius: 50%;
 }
 
+@font-face {
+  font-family: "config";
+  src: url("ConfigCondensed-Regular.eot");
+  src: url("ConfigCondensed-Regular.eot?#iefix") format("embedded-opentype"), url("ConfigCondensed-Regular.woff") format("woff"), url("ConfigCondensed-Regular.ttf") format("truetype"), url("ConfigCondensed-Regular.svg#config") format("svg");
+  font-weight: "fonts/ConfigCondensed-Regular";
+  font-style: "serif";
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "config";
+    src: url("ConfigCondensed-Regular.svg#config") format("svg");
+  }
+}
+
+@font-face {
+  font-family: "bradley";
+  src: url("Bradley Hand ITC V2.eot");
+  src: url("Bradley Hand ITC V2.eot?#iefix") format("embedded-opentype"), url("Bradley Hand ITC V2.woff") format("woff"), url("Bradley Hand ITC V2.ttf") format("truetype"), url("Bradley Hand ITC V2.svg#bradley") format("svg");
+  font-weight: "fonts/bradley/Bradley Hand ITC V2";
+  font-style: "serif";
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "bradley";
+    src: url("Bradley Hand ITC V2.svg#bradley") format("svg");
+  }
+}
+
 body {
-  font-family: 'normal font';
+  font-family: config;
   margin: 0;
   padding: 0;
   font-size: 0.8rem !important;
@@ -322,5 +352,10 @@ footer {
 
 footer a {
   color: #ffffff;
+}
+
+footer .bradley {
+  font-family: bradley;
+  font-style: italic;
 }
 /*# sourceMappingURL=style.css.map */
