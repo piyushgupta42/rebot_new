@@ -22,7 +22,7 @@
 </head>
 <body>
 <header>
-  <nav class="navbar navbar-expand-lg header--navbar bg-light" id="navbar-top">
+  <nav class="navbar navbar-expand-lg header--navbar bg-light navbar-light" id="navbar-top">
     <div class="container-fluid">
       <a class="logo navbar-brand" href="/">
         <div class="logo--img pr-3">
@@ -446,16 +446,16 @@ $(window).on('resize', function (){
 });
 
 $(document).on("scroll", function(){
-    if($(document).scrollTop() > 86)
-    {
-      $("#navbar-top").addClass("shrink");
-      // $('nav a').css('color','#000');
-    }
-    else
-    {
-      $("#navbar-top").removeClass("shrink");
-      // $('nav a').css('color','#fff');
-    }
+    // if($(document).scrollTop() > 86)
+    // {
+    //   $("#navbar-top").addClass("shrink");
+    //   // $('nav a').css('color','#000');
+    // }
+    // else
+    // {
+    //   $("#navbar-top").removeClass("shrink");
+    //   // $('nav a').css('color','#fff');
+    // }
 
   $('.navbar-nav li').click(function(){
     $('.nav-item').removeClass('active');
