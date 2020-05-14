@@ -32,7 +32,7 @@ nav{
         li{
             padding: 0 5px;
             font-weight: map-get($font-weight, bold );
-            letter-spacing: 2px;
+            letter-spacing: 1px;
               
         }
         .back-ground{
@@ -111,6 +111,9 @@ nav{
 .carousel-caption{
     top:14rem;
     margin: 0 auto;
+    h2{
+        font-size:40px;
+    }
 } 
 
 // about us
@@ -157,6 +160,7 @@ nav{
 .test-wrapper {
     border: 1px solid #e6e7e8;
     transition: .4s;
+    background: $color_wt;
     p{
         font-size: 16px;
     }
