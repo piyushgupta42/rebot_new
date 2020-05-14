@@ -24,6 +24,18 @@
   @include font-face('bradley', 'Bradley Hand ITC V2', 'fonts/bradley/Bradley Hand ITC V2', 'serif');
   h2{
     font-size: $title_size;
+      @media (max-width: $break-small) {
+          font-size: 40px;
+      }
+      @media (max-width: $break-medium) {
+        font-size: 40px;
+    }
+    @media (max-width: $break-large) {
+      font-size: 40px;
+  }
+    span{
+      font-size: 35px;
+    }
   }
   body{
    
