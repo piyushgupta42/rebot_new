@@ -7,7 +7,7 @@ nav a {
   background: linear-gradient(to right, #02d415 38%, #00a0e3 68%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .shrink {
@@ -18,6 +18,8 @@ nav a {
 
 .header--navbar li {
   padding: 0 5px;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 .header--navbar .back-ground {
@@ -62,6 +64,7 @@ nav a {
 .about-content a {
   background: -webkit-gradient(linear, right top, left top, color-stop(30%, #00a0e3), to(#02d415));
   background: linear-gradient(to left, #00a0e3 30%, #02d415 100%);
+  letter-spacing: 1px;
 }
 
 .back-ground {
@@ -71,6 +74,10 @@ nav a {
 
 .how-it-works {
   background: #000;
+}
+
+.how-it-works p {
+  font-size: 16px;
 }
 
 .how-it-works .how-images {
@@ -169,7 +176,7 @@ nav a {
 }
 
 .blog-item .blog-content {
-  padding: 50px 30px 45px;
+  padding: 20px;
 }
 
 .blog-item .blog-content h2 {
@@ -178,7 +185,6 @@ nav a {
 }
 
 .blog-item .blog-content h2 a {
-  color: #151515;
   font-size: 1.1rem;
 }
 
@@ -208,6 +214,11 @@ nav a {
 .social-icons li {
   display: inline-block;
   margin-bottom: 4px;
+  margin: 0 0 0 15px;
+}
+
+.social-icons li:first-child {
+  margin-left: 0;
 }
 
 .social-icons a {
@@ -249,7 +260,6 @@ nav a {
 .team-section .our-team .post {
   display: block;
   font-size: 15px;
-  color: #17bebb;
   text-transform: capitalize;
   margin-bottom: 15px;
 }
@@ -315,11 +325,25 @@ nav a {
   }
 }
 
+h2 {
+  font-size: 65px;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   font-size: 0.7rem !important;
+  color: #000;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #00a0e3;
 }
 
 .about-content p {
