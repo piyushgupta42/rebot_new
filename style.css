@@ -110,7 +110,7 @@ nav a {
 }
 
 .test-wrapper p {
-  font-size: 16px;
+  font-size: 0.7rem;
 }
 
 .test-wrapper:hover {
@@ -373,8 +373,12 @@ a:hover {
   color: #00a0e3;
 }
 
+p {
+  font-size: 0.7rem;
+}
+
 .about-content p {
-  font-size: 15px;
+  font-size: 0.7rem;
   color: #545454;
 }
 
