@@ -5,8 +5,12 @@ $color_bk:#000;
 $primary_color:#00a0e3;
 $secondary_color:#02d415;
 $background_clr_gray:#f8f9fa;
-$title_size:65px;
+$title_size:5rem;
 $sub_title_size:16px;
+$break-small:576px;
+$break-medium:768px;
+$break-large:992px;
+$break-huge:1200px;
 $font-weight:(
     'normal':400,
     'medium':600,
