@@ -22,19 +22,25 @@
   }
   @include font-face('config', 'ConfigCondensed-Regular', 'fonts/ConfigCondensed-Regular', 'serif');
   @include font-face('bradley', 'Bradley Hand ITC V2', 'fonts/bradley/Bradley Hand ITC V2', 'serif');
+  h2{
+    font-size: $title_size;
+  }
   body{
    
     font-family: 'Poppins', sans-serif;
     margin:0;
     padding: 0;
     font-size: $font_size !important;
+    color: $color_bk;
 }
 
-// a{
-//     &:hover{
-//         color:$color_wt !important;
-//     }
-// }
+a{
+  color: $color_bk;
+    &:hover{
+        text-decoration: none;
+        color: $primary_color;
+    }
+}
 .about-content{
     p{
         font-size:$body_size;
