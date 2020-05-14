@@ -19,7 +19,7 @@ nav a {
 .header--navbar li {
   padding: 0 5px;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .header--navbar .back-ground {
@@ -52,6 +52,10 @@ nav a {
 .carousel-caption {
   top: 14rem;
   margin: 0 auto;
+}
+
+.carousel-caption h2 {
+  font-size: 40px;
 }
 
 .about-content h2 {
@@ -102,6 +106,7 @@ nav a {
   border: 1px solid #e6e7e8;
   -webkit-transition: .4s;
   transition: .4s;
+  background: #fff;
 }
 
 .test-wrapper p {
