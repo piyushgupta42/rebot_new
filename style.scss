@@ -53,9 +53,12 @@ a{
         color: $primary_color;
     }
 }
+p{
+  font-size:$font_size;
+}
 .about-content{
     p{
-        font-size:$body_size;
+        font-size:$font_size;
         color:#545454;
     }
     a{
