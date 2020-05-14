@@ -387,7 +387,7 @@
 <!-- <script defer src="assets/js/jquery.flexslider.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/main.js"></script>
+<!-- <script type="text/javascript" src="assets/js/main.js"></script> -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
@@ -403,6 +403,7 @@
     });
   });
 </script> -->
+
 <script>
 
 var $item = $('.carousel-item');
@@ -443,6 +444,49 @@ $(window).on('resize', function (){
   $wHeight = $(window).height();
   $item_b.height($wHeight);
 });
+
+$(document).on("scroll", function(){
+    if($(document).scrollTop() > 86)
+    {
+      $("#navbar-top").addClass("shrink");
+      // $('nav a').css('color','#000');
+    }
+    else
+    {
+      $("#navbar-top").removeClass("shrink");
+      // $('nav a').css('color','#fff');
+    }
+
+  $('.navbar-nav li').click(function(){
+    $('.nav-item').removeClass('active');
+    $(this).addClass("active"); 
+  })
+
+$(window).ready(function() {
+  var wi = $(window).width(); 
+  // alert (wi);
+
+      if (wi <= 480){
+          $('#navbar-top').addClass('navbar-light bg-light');
+          $('#navbar-top').removeClass('fixed-top');
+          }
+      else if (wi <= 767){
+          // $("p.testp").text('Screen width is between 481px and 767px. Width is currently: ' + wi + 'px.');
+           $('#navbar-top').addClass('navbar-light bg-light');
+          $('#navbar-top').removeClass('fixed-top');
+          }
+      // else if (wi <= 980){
+      //     $("p.testp").text('Screen width is between 768px and 980px. Width is currently: ' + wi + 'px.');
+      //     }
+      // else if (wi <= 1200){
+      //     $("p.testp").text('Screen width is between 981px and 1199px. Width is currently: ' + wi + 'px.');
+      //     }
+      else {
+          $("p.testp").text('Screen width is greater than 1200px. Width is currently: ' + wi + 'px.');
+          }
+  }); 
+
+}); 
 </script>
 </body>
 </html>
