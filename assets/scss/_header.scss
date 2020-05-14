@@ -164,7 +164,7 @@ nav{
     transition: .4s;
     background: $color_wt;
     p{
-        font-size: 16px;
+        font-size: $font_size;
     }
     &:hover{
         transform: translateY(-10px);
