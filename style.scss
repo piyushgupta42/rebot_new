@@ -24,7 +24,7 @@
   @include font-face('bradley', 'Bradley Hand ITC V2', 'fonts/bradley/Bradley Hand ITC V2', 'serif');
   body{
    
-    font-family: config;
+    font-family: 'Poppins', sans-serif;
     margin:0;
     padding: 0;
     font-size: $font_size !important;
@@ -37,7 +37,7 @@
 // }
 .about-content{
     p{
-        font-size:$font_size;
+        font-size:$body_size;
     }
     a{
         font-size: 12px;
@@ -55,7 +55,7 @@ footer{
         color:$color_wt;
     }
     .bradley{
-        font-family: bradley;
+        font-family: 'Dancing Script', cursive;
         font-style: italic;
     }
 }
