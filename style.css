@@ -16,45 +16,25 @@ nav a {
   background-color: #f9f9f9;
 }
 
-.header--navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding-top: 20px;
-  -webkit-transition: .25s;
-  transition: .25s;
-  z-index: 1;
-}
-
-.header--navbar .navbar-brand {
-  height: auto;
-  padding: 0;
-}
-
 .header--navbar li {
-  padding: 0 15px;
+  padding: 0 5px;
 }
 
-.header--navbar li a {
-  position: relative;
-  padding: 15px 0;
+.header--navbar .back-ground {
+  font-size: .8rem;
+  padding-top: 0.5rem;
+  margin-left: 1.5rem;
+  border-radius: 10px !important;
 }
 
-.header--navbar li a:hover:before, .header--navbar li a .header--navbar li a.active:before {
-  width: 90%;
+.header--navbar .back-ground:focus {
+  outline: 0 !important;
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
 }
 
-.header--navbar li a:before {
-  content: "";
-  position: absolute;
-  left: 5px;
-  bottom: 26px;
-  transition: width .25s ease-in-out;
-  -webkit-transition: width .25s ease-in-out;
-  height: 1px;
-  background: #00a0e3;
-  width: 0;
+.navbar-nav .nav-item a:hover, .navbar-nav .nav-item a:active, .navbar-nav .nav-item a:focus {
+  color: #00a0e3;
 }
 
 .carousel-indicators .active {
@@ -80,6 +60,11 @@ nav a {
 }
 
 .about-content a {
+  background: -webkit-gradient(linear, right top, left top, color-stop(30%, #00a0e3), to(#02d415));
+  background: linear-gradient(to left, #00a0e3 30%, #02d415 100%);
+}
+
+.back-ground {
   background: -webkit-gradient(linear, right top, left top, color-stop(30%, #00a0e3), to(#02d415));
   background: linear-gradient(to left, #00a0e3 30%, #02d415 100%);
 }
@@ -165,6 +150,10 @@ nav a {
 }
 
 /* blog */
+.our-blog {
+  background: #000;
+}
+
 .blog-item {
   background-color: #f8f9fc;
   -webkit-transition: .4s;
@@ -327,14 +316,14 @@ nav a {
 }
 
 body {
-  font-family: config;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  font-size: 0.8rem !important;
+  font-size: 0.7rem !important;
 }
 
 .about-content p {
-  font-size: 0.8rem;
+  font-size: 17px;
 }
 
 .about-content a {
@@ -355,7 +344,7 @@ footer a {
 }
 
 footer .bradley {
-  font-family: bradley;
+  font-family: 'Dancing Script', cursive;
   font-style: italic;
 }
 /*# sourceMappingURL=style.css.map */
