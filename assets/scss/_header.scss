@@ -15,7 +15,7 @@ nav{
     background: linear-gradient(to right, #02d415 38%, #00a0e3 68%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: bold;
+    font-weight: map-get($font-weight, bold );
 }
 
 
@@ -30,7 +30,10 @@ nav{
      }  
      .header--navbar{
         li{
-            padding: 0 5px;  
+            padding: 0 5px;
+            font-weight: map-get($font-weight, bold );
+            letter-spacing: 2px;
+              
         }
         .back-ground{
             font-size: .8rem;
@@ -119,6 +122,7 @@ nav{
     }
     a{
         background: linear-gradient(to left, #00a0e3 30%, #02d415  100%);
+        letter-spacing: 1px;
     }
     
 }
@@ -127,7 +131,10 @@ nav{
 }
 
 .how-it-works{
-    background:#000;
+    background:$color_bk;
+    p{
+        font-size: $sub_title_size;
+    }
     .how-images{
         width: 100%;
         position: relative;
@@ -208,12 +215,11 @@ nav{
         box-shadow: 0 10px 60px 0 rgba(71,74,182,.16);
     }
     .blog-content {
-        padding: 50px 30px 45px;
+        padding: 20px;
          h2{
-            font-weight: 600;
+            font-weight: map-get($font-weight, medium );
             margin-bottom: 15px;
             a {
-                color: #151515;
                 font-size: 1.1rem;
             }
         }
@@ -225,7 +231,7 @@ nav{
             margin-top: 20px;
             a {
                 color: #151515;
-                font-weight: 400;
+                font-weight: map-get($font-weight, normal );
                 margin-right: 10px;
             }
         }
@@ -243,6 +249,10 @@ nav{
   {
     display:inline-block;
     margin-bottom:4px;
+    margin: 0 0 0 15px;
+    &:first-child {
+        margin-left: 0;
+    }
   }
   a{
     margin-right:2px;
@@ -274,7 +284,7 @@ nav{
         .title{
             display: block;
             font-size: 20px;
-            font-weight: 600;
+            font-weight: map-get($font-weight, medium );
             color: #2e282a;
             text-transform: uppercase;
             margin: 0 0 7px 0;
@@ -282,7 +292,6 @@ nav{
         .post{
             display: block;
             font-size: 15px;
-            color: #17bebb;
             text-transform: capitalize;
             margin-bottom: 15px;
         }
