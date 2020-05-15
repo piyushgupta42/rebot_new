@@ -51,28 +51,21 @@ nav a {
 }
 
 .carousel-caption {
-  top: 14rem;
-  margin: 0 auto;
-}
-
-@media (max-width: 576px) {
-  .carousel-caption {
-    left: 0;
-    top: 13rem;
-    margin: 0 auto;
-    position: relative;
-    padding: 0 35px;
-  }
-}
-
-@media (max-width: 768px) {
-  .carousel-caption {
-    left: 0;
-    top: 13rem;
-    margin: 0 auto;
-    position: relative;
-    padding: 0 35px;
-  }
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 0;
+  bottom: 0;
+  padding-top: 0px;
+  padding-left: 37px;
+  padding-right: 37px;
+  padding-bottom: 50px;
 }
 
 .carousel-caption h2 {
@@ -81,7 +74,7 @@ nav a {
 
 @media (max-width: 576px) {
   .carousel-caption h2 {
-    font-size: 32px;
+    font-size: 30px;
   }
 }
 
