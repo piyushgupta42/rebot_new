@@ -98,9 +98,15 @@ nav{
         }
 
 .carousel-indicators {
+    li{
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+    }
     & .active{
         
-        background-color:$primary_color !important;
+        background-color:$secondary_color !important;
+        
     }   
 }
 
