@@ -40,8 +40,14 @@ nav a {
   color: #00a0e3;
 }
 
+.carousel-indicators li {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
 .carousel-indicators .active {
-  background-color: #00a0e3 !important;
+  background-color: #02d415 !important;
 }
 
 .full-screen {
