@@ -40,6 +40,7 @@ nav{
             padding-top: 0.5rem;
             margin-left: 1.5rem;
             border-radius: 10px !important;
+            margin:0 auto;
             &:focus{
                 outline: 0 !important;
                 box-shadow: 0 0 0 0;
@@ -111,14 +112,54 @@ nav{
 .carousel-caption{
     top:14rem;
     margin: 0 auto;
+    @media (max-width: $break-small) {
+        left: 0;
+        top: 13rem;
+        margin: 0 auto;
+        position: relative;
+        padding: 0 35px;
+    }
+    @media (max-width: $break-medium) {
+        left: 0;
+        top: 13rem;
+        margin: 0 auto;
+        position: relative;
+        padding: 0 35px;
+    }
     h2{
         font-size:40px;
+        @media (max-width: $break-small) {
+            font-size:32px;
+        }
     }
 } 
 
 // about us
+.section--about{
+    h2{
+        @media (max-width: $break-small) {
+            text-align: center;
+        }
+        @media (max-width: $break-medium) {
+            text-align: center;
+        }
+        @media (max-width: $break-large) {
+            text-align: center;
+        }
+    }
+}
 .about-content{
     h2{
+        @media (max-width: $break-small) {
+            background: linear-gradient(to left, #00a0e3 0%, #02d415  100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+        }
+        @media (max-width: $break-medium) {
+            background: linear-gradient(to left, #00a0e3 0%, #02d415  100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+        }
         background: linear-gradient(to left, #00a0e3 65%, #02d415  100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; 
