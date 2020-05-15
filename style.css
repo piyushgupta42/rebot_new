@@ -27,6 +27,7 @@ nav a {
   padding-top: 0.5rem;
   margin-left: 1.5rem;
   border-radius: 10px !important;
+  margin: 0 auto;
 }
 
 .header--navbar .back-ground:focus {
@@ -54,8 +55,52 @@ nav a {
   margin: 0 auto;
 }
 
+@media (max-width: 576px) {
+  .carousel-caption {
+    left: 0;
+    top: 13rem;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    left: 0;
+    top: 13rem;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 35px;
+  }
+}
+
 .carousel-caption h2 {
   font-size: 40px;
+}
+
+@media (max-width: 576px) {
+  .carousel-caption h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section--about h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .section--about h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .section--about h2 {
+    text-align: center;
+  }
 }
 
 .about-content h2 {
@@ -63,6 +108,24 @@ nav a {
   background: linear-gradient(to left, #00a0e3 65%, #02d415 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 576px) {
+  .about-content h2 {
+    background: -webkit-gradient(linear, right top, left top, from(#00a0e3), to(#02d415));
+    background: linear-gradient(to left, #00a0e3 0%, #02d415 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content h2 {
+    background: -webkit-gradient(linear, right top, left top, from(#00a0e3), to(#02d415));
+    background: linear-gradient(to left, #00a0e3 0%, #02d415 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .about-content a {
