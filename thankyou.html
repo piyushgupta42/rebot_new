@@ -26,6 +26,11 @@
     <div class="blogs">
         <div class="container">
             <div class="text-center mt-3">
+                <a class="logo" href="/">
+                    <div class="logo--img pr-3 pb-4">
+                      <img src="rebot.png" class="rounded logo">
+                    </div>
+                  </a>
                 <h2 class="text-capitalize font-weight-bold font_gradient">Thank You!</h2>
                 <div class="sub-title">for joining the ReBot revolution.</div>
                 <hr class="divider">
@@ -60,7 +65,8 @@ body{
     margin: 0;
     padding: 0;
     font-size: 0.7rem !important;
-}    
+}
+img.rounded.logo { width: 15%;}    
 .font_gradient {
     background: -webkit-gradient(linear, left top, right top, color-stop(38%, #02d415), color-stop(68%, #00a0e3));
     background: linear-gradient(to right, #02d415 38%, #00a0e3 68%);
@@ -109,6 +115,7 @@ i.fa {
 }
     @media (max-width: 576px) {
         .thank-wrapper h2 {font-size: 3rem;}
+        img.rounded.logo { width: 50%;} 
     }
 </style>
 </body>
